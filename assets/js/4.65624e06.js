@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{350:function(t,n,e){"use strict";e.r(n);var u={data:function(){return{}}},i=e(42),r=Object(i.a)(u,(function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("vue啦")])}),[],!1,null,"3033512f",null);n.default=r.exports}}]);
