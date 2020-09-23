@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据双向绑定原理 | TXBLOG</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue 驱动的静态网站生成器">
+    <link rel="preload" href="/assets/css/0.styles.d727f307.css" as="style"><link rel="preload" href="/assets/js/app.ae568879.js" as="script"><link rel="preload" href="/assets/js/2.cdcfc504.js" as="script"><link rel="preload" href="/assets/js/12.75b6a50f.js" as="script"><link rel="prefetch" href="/assets/js/10.3136c800.js"><link rel="prefetch" href="/assets/js/11.55ce4611.js"><link rel="prefetch" href="/assets/js/13.35f9261c.js"><link rel="prefetch" href="/assets/js/14.bc59e4b4.js"><link rel="prefetch" href="/assets/js/15.b6c01a8e.js"><link rel="prefetch" href="/assets/js/16.167485bf.js"><link rel="prefetch" href="/assets/js/17.213e4df3.js"><link rel="prefetch" href="/assets/js/18.3249dc07.js"><link rel="prefetch" href="/assets/js/19.54a4d119.js"><link rel="prefetch" href="/assets/js/20.9178a168.js"><link rel="prefetch" href="/assets/js/21.ba4795b4.js"><link rel="prefetch" href="/assets/js/22.01356fcf.js"><link rel="prefetch" href="/assets/js/23.0726427d.js"><link rel="prefetch" href="/assets/js/3.45b6317d.js"><link rel="prefetch" href="/assets/js/4.34afe534.js"><link rel="prefetch" href="/assets/js/5.d77ec2a4.js"><link rel="prefetch" href="/assets/js/6.84197774.js"><link rel="prefetch" href="/assets/js/7.946d2246.js"><link rel="prefetch" href="/assets/js/8.62857aed.js"><link rel="prefetch" href="/assets/js/9.65ba1bac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d727f307.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TXBLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/SideBar/studyMenus/npm.html" class="nav-link">
+  学习随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Study Menu" class="dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/SideBar/Git/Git工作流程及规范.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/DOM/DOM.html" class="nav-link">
+  DOM
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/Vue/组件传值.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/G6/G6Demo.html" class="nav-link">
+  G6Demo
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/SideBar/studyMenus/npm.html" class="nav-link">
+  学习随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Study Menu" class="dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/SideBar/Git/Git工作流程及规范.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/DOM/DOM.html" class="nav-link">
+  DOM
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/Vue/组件传值.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/G6/G6Demo.html" class="nav-link">
+  G6Demo
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/SideBar/Vue/组件传值.html" class="sidebar-link">组件通信的几种方式...</a></li><li><a href="/SideBar/Vue/computed和watch.html" class="sidebar-link">computed 和 watch 的区别</a></li><li><a href="/SideBar/Vue/数据双向绑定原理.html" class="active sidebar-link">数据双向绑定原理</a></li><li><a href="/SideBar/Vue/vuex刷新页面数据丢失.html" class="sidebar-link">vuex 刷新页面后新数据丢失</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数据双向绑定原理"><a href="#数据双向绑定原理" class="header-anchor">#</a> 数据双向绑定原理</h1> <p><code>vue.js</code> 是采用<strong>数据劫持</strong>结合<strong>发布者-订阅者模式</strong>的方式，
+通过 <code>Object.defineProperty()</code>来劫持各个属性的 <code>setter</code>，<code>getter</code>，
+在数据变动时发布消息给订阅者，触发相应的监听回调。</p> <ul><li>主要分为以下几个步骤：</li></ul> <blockquote><ol><li>需要 <code>observe</code> 的数据对象进行递归遍历，包括子属性对象的属性，
+都加上 <code>setter</code> 和 <code>getter</code> 这样的话，给这个对象的某个值赋值，就会触发 <code>setter</code>，那么就能监听到了数据变化</li></ol></blockquote> <blockquote><ol start="2"><li><code>compile</code> 解析模板指令，将模板中的变量替换成数据，然后初始化渲染页面视图，
+并将每个指令对应的节点绑定更新函数，添加监听数据的订阅者，一旦数据有变动，收到通知，更新视图</li></ol></blockquote> <blockquote><ol start="3"><li><p><code>Watcher</code> 订阅者是 <code>Observer</code> 和 <code>Compile</code> 之间通信的桥梁，主要做的事情是:</p> <p>① 在自身实例化时往属性订阅器(dep)里面添加自己</p> <p>② 自身必须有一个 <code>update()</code>方法</p> <p>③ 待属性变动 <code>dep.notice()</code>通知时，能调用自身的 <code>update()</code>方法，并触发 <code>Compile</code> 中绑定的回调，则功成身退。</p></li></ol></blockquote> <blockquote><ol start="4"><li><code>MVVM</code> 作为数据绑定的入口，整合 <code>Observer</code>、<code>Compile</code> 和 <code>Watcher</code> 三者，
+通过 <code>Observer</code> 来监听自己的 <code>model</code> 数据变化，通过 <code>Compile</code> 来解析编译模板指令，
+最终利用 <code>Watcher</code> 搭起 <code>Observer</code> 和 <code>Compile</code> 之间的通信桥梁，
+达到 <strong>数据变化 -&gt; 视图更新</strong>；<strong>视图交互变化<code>(input)</code> -&gt; 数据 <code>model</code> 变更</strong>的双向绑定效果。</li></ol></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/25/2020, 1:52:24 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/SideBar/Vue/computed和watch.html" class="prev">
+        computed 和 watch 的区别
+      </a></span> <span class="next"><a href="/SideBar/Vue/vuex刷新页面数据丢失.html">
+        vuex 刷新页面后新数据丢失
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ae568879.js" defer></script><script src="/assets/js/2.cdcfc504.js" defer></script><script src="/assets/js/12.75b6a50f.js" defer></script>
+  </body>
+</html>

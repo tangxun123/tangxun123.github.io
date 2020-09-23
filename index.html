@@ -1,164 +1,53 @@
-﻿<!DOCTYPE html>
-<html manifest="cache.appcache">
- <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>推磨人搜索 — 搜索快人一步</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?b169f904ade5ef8ef30b1f93eb03f0ef";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
-  <meta name="renderer" content="webkit" />
-  <meta name="keywords" content="搜索引擎,快搜,学术搜索,推磨人" />
-  <meta name="description" content="推磨人全网出品！为您聚合Google,百度,必应等国内外综合搜索和学术,资源,专业领域知识等垂直搜索。精准搜索,便捷交互！是您的上网搜索第一站！" />
-  <meta name="revised" content="tuimoren, 2015/10/11/" />
-  <meta name="author" content="tuimoren.com" />
-  <link rel="shortcut icon" href="/favicon.ico" /> 
-  <script type="text/javascript" src="Scripts/jquery.min.js"></script>
-  <script src="Scripts/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="Css/font-awesome.min.css">
-  <link rel="stylesheet" href="Css/jquery.mcustomscrollbar.css" />
-  <link rel="stylesheet" type="text/css" href="Css/so.css"/>
-  <script src="Scripts/config.js" type="text/javascript" charset="utf-8"></script>
-  </head> 
- <body>
- 	<script type="text/javascript">
- 		if(localStorage.style === 'icon') {
- 			$(document.body).addClass('icon-style');
- 		}
- 	</script>
-  <div id="nav">
-   <ul id="skin-nav">
-    <li><a href="http://search.tuimoren.com/" title="推磨人快搜" class="logo"><img src="Picture/so_logo.png"/></a></li>
-    <li id="donate"><i style="color:#589BFF;" class="fa fa-thumbs-up"></i>&nbsp;赞助&nbsp;&nbsp;&nbsp;
-    <div id="sub_donate"></div></li> 
-    <li><a href="http://scholar.tuimoren.com/" target="_blank"><i style="color:#A262E8" class="fa fa-mortar-board"></i> 学术搜索</a></li>
-	<li><a href="http://data.tuimoren.com/" target="_blank"><i style="color:#F7B700" class="fa fa-cubes"></i> 数据搜索</a></li>
-	<li><a href="http://image.tuimoren.com/" target="_blank"><i style="color:#ED6D52" class="fa fa-picture-o"></i> 图搜</a></li>
-	<li><a href="http://magnet.tuimoren.com/" target="_blank"><i style="color:#52DBFC" class="fa fa-magnet"></i> 磁力搜索</a></li>
-    <li id="skin"><i style="color:#23CF5F" class="fa fa-leaf"></i> 皮肤
-     <ul id="skin-subnav">
-      <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1f0yog91237j205k05ka9z.jpg">默认</a></li>
-	  <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1f0ypz5sqeog203k03kt8l.gif">流水</a></li>
-      <li><a href="http://ww1.sinaimg.cn/large/b1601727gw1f0yog7wy6gj20go0goaar.jpg">晶体</a></li>
-      <li><a href="http://ww4.sinaimg.cn/large/b1601727gw1f0yogbxosbj20e80e8ta1.jpg">木纹</a></li>
-      <li><a href="http://ww2.sinaimg.cn/large/b1601727gw1f0yog9rt8jj20dw0afwg2.jpg">宣纸</a></li>
-      <li><a href="http://ww3.sinaimg.cn/large/b1601727gw1f0ypz6et0vj205804jglg.jpg">爱心</a></li>
-      <li><a href="http://ww1.sinaimg.cn/large/b1601727gw1f0ypz5y1g5g204102wa9z.gif">墙壁</a></li>
-      <li><a href="http://ww1.sinaimg.cn/large/b1601727gw1f0yogc8nydj208c08c3yc.jpg">知识</a></li>
-      <li><a href="http://ww4.sinaimg.cn/large/b1601727gw1f0yogacp89j20b40b7mxm.jpg">妖娆</a></li>
-      <li><a href="images/blue.gif">斜蓝</a></li>
-      <li><a href="images/grey.gif">纯灰</a></li>
-     </ul></li>
-	 <li><i class="fa fa-exchange"></i>&nbsp;<a id="translateLink"></a></li>
-   </ul>
-  </div>
-  <div class="container">
-   <div class="left-nav">
-    <ul id="foo" class="tuimoren">
-	  <li id="baidu"><img src="http://tb1.bdstatic.com/tb/favicon.ico" /><a data="https://www.baidu.com/">百度</a></li>
-     <li id="cnbing"><img src="http://cn.bing.com/favicon.ico" /><a data="http://cn.bing.com/">必应</a></li>
-	 <li id="weibo"><img src="http://weibo.com/favicon.ico" /><a data="http://bbs.chongbuluo.org/weibo.html">微博搜索</a></li>
-	 <li id="wechat"><img src="https://res.wx.qq.com/mpres/htmledition/images/favicon218877.ico" /><a data="http://weixin.sogou.com/?p=73141200&amp;kw=">搜狗微信</a></li>
-	 <li id="zhihu"><img src="http://7q5dsg.com1.z0.glb.clouddn.com/@/favicon/zhihu/favicon.ico" /><a data="http://zhihu.sogou.com/">搜狗知乎</a></li>
-	 <li id="amap"><img src="http://ww1.sinaimg.cn/small/b1601727gw1ety42cavbgj200u00u3y9.jpg" /><a data="http://www.amap.com/">高德地图</a></li>
-	 <li id="weather"><img src="https://www.ventusky.com/images/favicon.ico" /><a data="https://www.ventusky.com">实时天气</a></li>
-	 <li id="wdl"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/wdl/favicon.ico" /><a data="http://www.wdl.org/zh/">世界图书馆</a></li>
-	 <li id="taobao"><img src="http://7q5dsg.com1.z0.glb.clouddn.com/@/favicon/taobao/favicon.ico" /><a data="http://s.taobao.com/">淘宝</a></li>
-	 <li id="easyicon"><img src="http://www.easyicon.net/favicon.ico" /><a data="http://www.lszhibo.com/">赛事直播</a></li>
-	 <li id="zcool"><img src="http://ww2.sinaimg.cn/large/b1601727gw1eyyboe2iyuj200g00g0lw.jpg" /><a data="http://sucai.zcool.com.cn/">素材</a></li>
-	 <li id="biaoqing"><img src="http://static-qiniu.720static.com/favicon.ico" /><a data="http://720yun.com/">全景看世界</a></li>
-	 <li id="gif"><img src="http://deepba.com/favicon.ico" /><a data="view-source:http://deepba.com/">装逼神器</a></li>
-	 <li id="jiumodiary"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/jiumodiary/favicon.png" /><a data="http://www.jiumodiary.com/">电子书</a></li>
-	 <li id="bookzz"><img src="http://7q5dsg.com1.z0.glb.clouddn.com/@/favicon/bookzz/favicon.ico" /><a data="http://zh.bookzz.org/">BookZZ</a></li>
-	 <li id="panc"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/panc/favicon.ico" /><a data="https://www.panc.cc/">胖次</a></li>
-     <li id="kuaidi"><img src="https://cdn.kuaidi100.com/images/touch-icon-iphone.png" /><a data="http://m.kuaidi100.com/">快递</a></li>
-	 <li id="gepu"><img src="http://www.zhaogepu.com/favicon.ico" /><a data="http://www.zhaogepu.com/">找歌谱</a></li>
-	 <li id="nyaso"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/nyaso/favicon.ico" /><a data="https://nyaso.com/">动漫资源</a></li>
-	 <li id="kisssub"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/kisssub/kisssub.ico" /><a data="http://www.kisssub.org/">动漫 BT</a></li>
-	 <li id="acgsou"><img src="http://cdn.aixifan.com/ico/favicon.ico" /><a data="http://www.acgsou.com/">ACG搜</a></li>
-	 <li id="chashenjia"><img src="http://naotu.baidu.com/favicon.ico" /><a data="http://naotu.baidu.com/">查身价</a></li>
-	 <li id="shapecatcher"><img src="http://cn.office-converter.com/images/apple-touch-icon-144-precomposed.png" /><a data="http://cn.office-converter.com/">在线文件转换</a></li>
-     <li id="mba"><img src="http://www.mbalib.com/favicon.ico" /><a data="http://www.mbalib.com/">MBA智库</a></li>
-	 <li id="visualhunt"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/visualhunt/favicon.ico" /><a data="http://visualhunt.com/">Visual Hunt</a></li>
-	 <li id="renwu"><img src="https://www.sogou.com/images/logo/new/favicon.ico" /><a data="http://www.sogou.com/tupu/person.html?q=%E8%B5%B5%E4%B8%BD%E9%A2%96">人物关系</a></li>
-	 <li id="xungen"><img src="/images/xungen.ico" /><a data="http://yixi.tv/">中国TED</a></li>
-	 <li id="handian"><img src="http://www.zdic.net/favicon.ico" /><a data="http://www.zdic.net/">汉典</a></li>
-	 <li id="vividict"><img src="http://www.vividict.com/favicon.ico" /><a data="http://www.vividict.com/Default.aspx">象形文字</a></li>
-	 <li id="guoxue"><img src="http://www.199it.com/wp-content/themes/newsplus/images/apple_touch_icon.png" /><a data="http://www.199it.com/">中文互联网数据</a></li>
-	 <li id="wenxian"><img src="http://www.chongbuluo.org/images/daizhige.ico" /><a data="http://122.200.75.13">古文献</a></li>
-	 <li id="makedie"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/assrt/favicon.ico" /><a data="http://assrt.net/">字幕</a></li>
-	 <li id="bilibili"><img src="http://static.hdslb.com/images/favicon.ico" /><a data="http://search.bilibili.com/">哔哩哔哩</a></li>
-	 <li id="soku"><img src="http://www.chongbuluo.org/images/soku.ico" /><a data="http://www.soku.com/">视频</a></li>
-     <li id="b1bj"><img src="http://hz.manmanbuy.com/upPic/2015010016532298523.ico" /><a data="http://b1bj.com/">比一比价</a></li>
-	 <li id="xitie"><img src="http://www.xitie.com/favicon.ico" /><a data="http://www.xitie.com/">商品历史价格</a></li>
-	 <li id="boxz"><img src="http://s.boxz.com/images/icon-z.ico" /><a data="http://www.boxz.com/">数码电器比价</a></li>
-	 <li id="food"><img src="http://static.meishichina.com/v6/favicon.ico" /><a data="http://home.meishichina.com/search/">美食美味</a></li>
-	 <li id="guge"><img src="http://7q5dsg.com1.z0.glb.clouddn.com/favicon/favicon.ico"><a data="https://g.glv.io/imghp" target="_blank">谷歌搜图</a></li>
-     <li id="baidushitu"><img src="http://tb1.bdstatic.com/tb/favicon.ico" /><a data="http://stu.baidu.com/">百度识图</a></li>
-	 <li id="tineye"><img src="http://www.chongbuluo.org/images/tineye.ico" /><a data="https://www.tineye.com/">Tineye</a></li>
-	 <li id="what-dog"><img src="http://7q5dsg.com1.z0.glb.clouddn.com//favicon/what-dog/favicon.ico" /><a data="https://www.what-dog.net/">狗狗识别器</a></li>
-	 <li id="font"><img src="http://www.qiuziti.com/img/icon.ico" /><a data="http://www.qiuziti.com/">求字体</a></li>
-	 <li id="code"><img src="http://symbolhound.com/favicon2.ico" /><a data="http://symbolhound.com/">编程符号</a></li>
-	 <li id="open"><img src="http://www.chongbuluo.org/images/kaiyuan.ico" /><a data="https://www.openhub.net/">开源代码</a></li>
-     <li id="innojoy"><img src="http://www.innojoy.com/images/patMain.ico" /><a data="http://www.innojoy.com/search/index.shtml">专利检索</a></li>
-	 <li id="andaike"><img src="http://www.andaike.com/favicon.ico" /><a data="http://www.andaike.com/">安贷客</a></li>
-	 <li id="cheyisou"><img src="http://www.cheyisou.com/favicon.ico" /><a data="http://www.cheyisou.com/">易车</a></li>
-     <li id="qiujieda"><img src="http://www.chongbuluo.org/images/qiujieda.ico" /><a data="http://www.qiujieda.com/">求解答</a></li>
-     <li id="open-open"><img src="http://www.chongbuluo.org/images/kaiyuan.ico" /><a data="http://www.open-open.com/doc/">开源文献</a></li>
-     <li id="similar"><img src="http://www.chongbuluo.org/images/similarsitesearch.ico" /><a data="http://www.similarsitesearch.com/cn/">类似网站</a></li>
-     <li id="huaxue"><img src="http://www.chongbuluo.org/images/chs.ico" /><a data="http://awesomecow.com/">Linux软件</a></li>
-	 <li id="anychem"><img src="http://www.anychem.com/favicon.ico" /><a data="http://www.anychem.com/">化工</a></li>
-	 <li id="chembing"><img src="http://7q5dsg.com1.z0.glb.clouddn.com/@/favicon/chembing/favicon.ico" /><a data="http://www.chembing.com/">化学</a></li>
-	 <li id="chemy"><img src="http://www.ichemistry.cn/favicon.ico" /><a data="http://www.ichemistry.cn/structure.asp">化学结构式</a></li>
-	 <li id="tianyancha"><img src="http://www.tianyancha.com/favicon.ico" /><a data="http://www.tianyancha.com/">查企业</a></li>
-     <li id="qgtong"><img src="http://www.qgtong.com/favicon.ico" /><a data="http://www.qgtong.com/so/Search.asp">海关</a></li>
-     <li id="sound"><img src="http://www.chongbuluo.org/images/findsounds.ico" /><a data="http://www.findsounds.com/ISAPI/search.dll?keywords=computer+keyboard+typing">声音</a></li>
-	 <li id="csres"><img src="http://www.csres.com/images/gb.ico" /><a data="http://www.csres.com/">国家标准</a></li>
-     <li id="wolf"><img src="http://www.chongbuluo.org/images/wolframalpha.ico" /><a data="http://www.wolframalpha.com/">Wolfram Alpha</a></li>
-     <li id="tmtx"><img src="http://zhaoren.idtag.cn/samename/favicon.ico" /><a data="http://zhaoren.idtag.cn/">同名同姓</a></li>
-     <li id="trip"><img src="http://cdn.chanyouji.cn/assets/favicon-28d3ebf155339de4149e853c89268c5e.ico" /><a data="/trip.html">游记</a></li>
-     <li id="zoomeye"><img src="http://www.chongbuluo.org/images/zoomeye.ico" /><a data="http://www.zoomeye.org/" target="_blank">网络空间</a></li>
-     <li id="dianzi"><img src="http://www.chongbuluo.org/images/chinaso.ico" /><a data="http://www.alldatasheetcn.com/">电子元件数据</a></li>
-	 <li id="weiqi"><img src="/images/qi.jpg" /><a data="http://www.wtweiqi.com/search/index.jsp">围棋棋谱</a></li>
-     <li id="123"><img src="http://tb1.bdstatic.com/tb/favicon.ico" /><a data="http://123.baidu.com/">老年</a></li>
-	 <li id="oscobo"><img src="https://oscobo.co.uk/favicon.ico" /><a data="https://oscobo.co.uk/">Oscobo</a></li>
-     <li id="chinaso"><img src="http://ww1.sinaimg.cn/small/b1601727gw1ernqdfn4stj200g00g0it.jpg" /><a data="http://www.chinaso.com/">中国搜索</a></li>
-
-    </ul>
-    <script type="text/javascript">
-    	var c = localStorage.content;
-    	if(c) {
-    		$("#foo")[0].innerHTML = c;
-    	}
-    </script>
-    <script src="Scripts/jquery.mcustomscrollbar.concat.min.js"></script>
-    <script>$(".left-nav").mCustomScrollbar({theme:"minimal-dark"});</script>
-   </div>
-   <div class="main">
-    <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
-   </div>
-  </div>
-  <div class="footer">
-   <a href="http://www.chongbuluo.org/" target="_blank">推磨人出品</a>
-   <span>&copy; 2013-2016 tuimoren</span>
-   <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备正在备案</a>
-   <a href="http://bbs.tuimoren/blog-4-178.html" title="联系我们" target="_blank">联系我们</a>
-  </div>
-  <link href="Css/csshake.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" type="text/css" href="Css/ui-dialog.css"/>
-  <script src="Scripts/dialog-min.js" type="text/javascript" charset="utf-8"></script>
-  <link rel="stylesheet" type="text/css" href="Css/messenger.css"/>
-  <link rel="stylesheet" type="text/css" href="Css/messenger-theme-ice.css"/>
-  <script src="Scripts/messenger.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="Scripts/color.js"></script>
-  <script src="Scripts/chinese_convert.js"></script>
-  <script>
-	var defaultEncoding = 2; // 预设语言：1-繁体中文 | 2-简体中文
-	var translateDelay = 0;
-	var cookieDomain = "http://www.iglorying.com";        
-	var msgToTraditionalChinese = "繁体";        
-	var msgToSimplifiedChinese = "简体";        
-	var translateButtonId = "translateLink"; 
-	translateInitilization();
-  </script>
-->
- </body>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TXBLOG</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue 驱动的静态网站生成器">
+    <link rel="preload" href="/assets/css/0.styles.d727f307.css" as="style"><link rel="preload" href="/assets/js/app.ae568879.js" as="script"><link rel="preload" href="/assets/js/2.cdcfc504.js" as="script"><link rel="preload" href="/assets/js/6.84197774.js" as="script"><link rel="prefetch" href="/assets/js/10.3136c800.js"><link rel="prefetch" href="/assets/js/11.55ce4611.js"><link rel="prefetch" href="/assets/js/12.75b6a50f.js"><link rel="prefetch" href="/assets/js/13.35f9261c.js"><link rel="prefetch" href="/assets/js/14.bc59e4b4.js"><link rel="prefetch" href="/assets/js/15.b6c01a8e.js"><link rel="prefetch" href="/assets/js/16.167485bf.js"><link rel="prefetch" href="/assets/js/17.213e4df3.js"><link rel="prefetch" href="/assets/js/18.3249dc07.js"><link rel="prefetch" href="/assets/js/19.54a4d119.js"><link rel="prefetch" href="/assets/js/20.9178a168.js"><link rel="prefetch" href="/assets/js/21.ba4795b4.js"><link rel="prefetch" href="/assets/js/22.01356fcf.js"><link rel="prefetch" href="/assets/js/23.0726427d.js"><link rel="prefetch" href="/assets/js/3.45b6317d.js"><link rel="prefetch" href="/assets/js/4.34afe534.js"><link rel="prefetch" href="/assets/js/5.d77ec2a4.js"><link rel="prefetch" href="/assets/js/7.946d2246.js"><link rel="prefetch" href="/assets/js/8.62857aed.js"><link rel="prefetch" href="/assets/js/9.65ba1bac.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d727f307.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">TXBLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="/SideBar/studyMenus/npm.html" class="nav-link">
+  学习随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Study Menu" class="dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/SideBar/Git/Git工作流程及规范.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/DOM/DOM.html" class="nav-link">
+  DOM
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/Vue/组件传值.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/G6/G6Demo.html" class="nav-link">
+  G6Demo
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  首页
+</a></div><div class="nav-item"><a href="/SideBar/studyMenus/npm.html" class="nav-link">
+  学习随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Study Menu" class="dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/SideBar/Git/Git工作流程及规范.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/DOM/DOM.html" class="nav-link">
+  DOM
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/Vue/组件传值.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/G6/G6Demo.html" class="nav-link">
+  G6Demo
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <main aria-labelledby="main-title" class="home"><header class="hero"><img src="/logo.jpg" alt="hero"> <h1 id="main-title">
+      LX-BLOG
+    </h1> <p class="description">
+      lx
+    </p> <p class="action"><a href="/SideBar/studyMenus/npm.html" class="nav-link action-button">
+  滚去学习 →
+</a></p></header> <div class="features"><div class="feature"><h2>简洁至上</h2> <p>以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。</p></div><div class="feature"><h2>Vue驱动</h2> <p>享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。</p></div><div class="feature"><h2>高性能</h2> <p>VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。</p></div></div> <div class="theme-default-content custom content__default"></div> <div class="footer">
+    personal blog Licensed | Copyright © 2018-2020
+  </div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ae568879.js" defer></script><script src="/assets/js/2.cdcfc504.js" defer></script><script src="/assets/js/6.84197774.js" defer></script>
+  </body>
 </html>
