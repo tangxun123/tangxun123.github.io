@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>react-native 导航器 | TXBLOG</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue 驱动的静态网站生成器">
+    <link rel="preload" href="/assets/css/0.styles.d727f307.css" as="style"><link rel="preload" href="/assets/js/app.a455e305.js" as="script"><link rel="preload" href="/assets/js/2.cdcfc504.js" as="script"><link rel="preload" href="/assets/js/11.5d74ab4f.js" as="script"><link rel="prefetch" href="/assets/js/10.1c66a2ec.js"><link rel="prefetch" href="/assets/js/12.468b9f3c.js"><link rel="prefetch" href="/assets/js/13.f1c144f4.js"><link rel="prefetch" href="/assets/js/14.4d6f7c78.js"><link rel="prefetch" href="/assets/js/15.384a7a19.js"><link rel="prefetch" href="/assets/js/16.812d7e0b.js"><link rel="prefetch" href="/assets/js/17.56efc1f0.js"><link rel="prefetch" href="/assets/js/18.0b03712a.js"><link rel="prefetch" href="/assets/js/19.aa756e45.js"><link rel="prefetch" href="/assets/js/20.605ac274.js"><link rel="prefetch" href="/assets/js/21.83117d05.js"><link rel="prefetch" href="/assets/js/22.01919a60.js"><link rel="prefetch" href="/assets/js/23.d70d72be.js"><link rel="prefetch" href="/assets/js/24.b04e6ab5.js"><link rel="prefetch" href="/assets/js/25.518ba70a.js"><link rel="prefetch" href="/assets/js/26.720c834c.js"><link rel="prefetch" href="/assets/js/27.d083443e.js"><link rel="prefetch" href="/assets/js/3.e067f513.js"><link rel="prefetch" href="/assets/js/4.34afe534.js"><link rel="prefetch" href="/assets/js/5.d77ec2a4.js"><link rel="prefetch" href="/assets/js/6.100e193d.js"><link rel="prefetch" href="/assets/js/7.d4597d4f.js"><link rel="prefetch" href="/assets/js/8.3cb6d76c.js"><link rel="prefetch" href="/assets/js/9.364942bb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d727f307.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TXBLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/SideBar/studyMenus/npm.html" class="nav-link">
+  学习随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Study Menu" class="dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/SideBar/Git/Git工作流程及规范.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/DOM/DOM.html" class="nav-link">
+  DOM
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/Vue/组件传值.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/React/Hook.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/ReactNative/启动页空白.html" class="nav-link">
+  ReactNative
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/G6/G6Demo.html" class="nav-link">
+  G6Demo
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/SideBar/studyMenus/npm.html" class="nav-link">
+  学习随笔
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Study Menu" class="dropdown-title"><span class="title">知识点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/SideBar/Git/Git工作流程及规范.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/DOM/DOM.html" class="nav-link">
+  DOM
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/Vue/组件传值.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/React/Hook.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/ReactNative/启动页空白.html" class="nav-link">
+  ReactNative
+</a></li><li class="dropdown-item"><!----> <a href="/SideBar/G6/G6Demo.html" class="nav-link">
+  G6Demo
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/SideBar/ReactNative/启动页空白.html" class="sidebar-link">react-native 启动页空白</a></li><li><a href="/SideBar/ReactNative/Android打包APK.html" class="sidebar-link">React Native Android 打包APK</a></li><li><a href="/SideBar/ReactNative/Navigation导航器.html" class="active sidebar-link">react-native 导航器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/SideBar/ReactNative/Navigation导航器.html#react-native-导航器" class="sidebar-link">react-native 导航器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/SideBar/ReactNative/Navigation导航器.html#_1-安装依赖" class="sidebar-link">1. 安装依赖</a></li><li class="sidebar-sub-header"><a href="/SideBar/ReactNative/Navigation导航器.html#_2-创建一个堆栈导航器（stack-navigation）" class="sidebar-link">2. 创建一个堆栈导航器（Stack Navigation）</a></li><li class="sidebar-sub-header"><a href="/SideBar/ReactNative/Navigation导航器.html#_3-嵌套导航（tabs）" class="sidebar-link">3. 嵌套导航（Tabs）</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="react-native-导航器"><a href="#react-native-导航器" class="header-anchor">#</a> react-native 导航器</h2> <h3 id="_1-安装依赖"><a href="#_1-安装依赖" class="header-anchor">#</a> 1. 安装依赖</h3> <div class="language-json extra-class"><pre class="language-json"><code>npm install @react-navigation/native
+npm install react-native-gesture-handler 
+npm install react-native-reanimated 
+npm install react-native-screens 
+npm install react-native-safe-area-context 
+npm install @react-native-community/masked-view
+
+<span class="token comment">// yarn 则使用 yarn add</span>
+</code></pre></div><blockquote><p>React Native 0.60及更高版本，链接是自动的。因此，不需要运行 <strong>react-native link</strong></p></blockquote> <blockquote><p>如果在Mac上并为iOS开发，您需要安装Pad（通过Cocoapods）以完成链接</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>npx pod<span class="token operator">-</span>install ios
+</code></pre></div><blockquote><p>在 App.js 或者 index.js 拷贝进以下代码</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token string">'react-native-gesture-handler'</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_2-创建一个堆栈导航器（stack-navigation）"><a href="#_2-创建一个堆栈导航器（stack-navigation）" class="header-anchor">#</a> 2. 创建一个堆栈导航器（Stack Navigation）</h3> <h4 id="_2-1-安装堆栈导航依赖"><a href="#_2-1-安装堆栈导航依赖" class="header-anchor">#</a> 2.1 安装堆栈导航依赖</h4> <div class="language-js extra-class"><pre class="language-js"><code>npm install @react<span class="token operator">-</span>navigation<span class="token operator">/</span>stack
+</code></pre></div><h4 id="_2-2-navigation-可用-api"><a href="#_2-2-navigation-可用-api" class="header-anchor">#</a> 2.2 navigation 可用 API</h4> <p>在所有的页面组件中都可以获取到navigation属性（只要组件被定义为路由配置和使用React Navigation来渲染路由）。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// const {route, navigation} = this.props; // class写法</span>
+<span class="token comment">// 可用api</span>
+navigation<span class="token punctuation">.</span><span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">&quot;RouteName&quot;</span><span class="token punctuation">)</span> <span class="token comment">// 如果新路由不在堆栈中，则将其推到堆栈导航器，否则将跳转到这个页面。</span>
+navigation<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">&quot;RouteName&quot;</span><span class="token punctuation">)</span> <span class="token comment">// 跳转去相关路由页面 可以多次跳转到相同路由页面</span>
+navigation<span class="token punctuation">.</span><span class="token function">goBack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 返回上一个页面</span>
+navigation<span class="token punctuation">.</span><span class="token function">popToTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 回到堆栈的第一个屏幕页面</span>
+navigation<span class="token punctuation">.</span><span class="token function">popToTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 回到堆栈的第一个屏幕页面</span>
+navigation<span class="token punctuation">.</span><span class="token function">popToTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 回到堆栈的第一个屏幕页面</span>
+
+</code></pre></div><h4 id="_2-3-example"><a href="#_2-3-example" class="header-anchor">#</a> 2.3 Example</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// In App.js in a new project</span>
+
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> View<span class="token punctuation">,</span> Text<span class="token punctuation">,</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> NavigationContainer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@react-navigation/native'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStackNavigator <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@react-navigation/stack'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">LoginScreen</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>navigation<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>View style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span> justifyContent<span class="token operator">:</span> <span class="token string">'center'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Text<span class="token operator">&gt;</span>Login Screen<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Button title<span class="token operator">=</span><span class="token string">&quot;User Login&quot;</span> onPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> navigation<span class="token punctuation">.</span><span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">&quot;Home&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">HomeScreen</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>navigation<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>View style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span> justifyContent<span class="token operator">:</span> <span class="token string">'center'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Text<span class="token operator">&gt;</span>Home Screen<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Button title<span class="token operator">=</span><span class="token string">&quot;Home Page&quot;</span> onPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> navigation<span class="token punctuation">.</span><span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">&quot;Login&quot;</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> Stack <span class="token operator">=</span> <span class="token function">createStackNavigator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 想隐藏第一个标题的头部导航 </span>
+<span class="token comment">// &lt;Stack.Screen name=&quot;Login&quot; options={{headerShown: false}} component={LoginScreen} /&gt;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>NavigationContainer<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Navigator<span class="token operator">&gt;</span>
+        <span class="token comment">// options={({ route }) =&gt; ({ title: route.params.name })} // 头部导航可以根据路由参数动态修改</span>
+        <span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Screen name<span class="token operator">=</span><span class="token string">&quot;Login&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>LoginScreen<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Screen name<span class="token operator">=</span><span class="token string">&quot;Home&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>HomeScreen<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Stack<span class="token punctuation">.</span>Navigator<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>NavigationContainer<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</code></pre></div><hr> <p>每次调用推送时，我们都会向导航堆栈添加新路由。当您调用导航时，它首先尝试查找具有该名称的现有路由，并且只有在堆栈上还没有新路由时，才会推送新路由。</p> <p>这样就完成了一个堆栈导航了，可以完成登录注册这种类似页面的切换了。</p> <h4 id="_2-4-导航器（路由）传参"><a href="#_2-4-导航器（路由）传参" class="header-anchor">#</a> 2.4 导航器（路由）传参</h4> <h5 id="_2-4-1-嵌套在导航内的参数"><a href="#_2-4-1-嵌套在导航内的参数" class="header-anchor">#</a> 2.4.1  嵌套在导航内的参数</h5> <p>将路由上需要的参数放在一个对象里，作为 <code>navigation.navigate</code> 函数的第二个参数：<code>navigation.navigate('RouteName', {key: value})</code> ，在组件中获取这个参数：route.params。</p> <div class="language-js extra-class"><pre class="language-js"><code>navigation<span class="token punctuation">.</span><span class="token function">navigate</span><span class="token punctuation">(</span><span class="token string">'Home'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  screen<span class="token operator">:</span> <span class="token string">'Settings'</span><span class="token punctuation">,</span>
+  params<span class="token operator">:</span> <span class="token punctuation">{</span> user<span class="token operator">:</span> <span class="token string">'Tom'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h5 id="_2-4-2-更新参数"><a href="#_2-4-2-更新参数" class="header-anchor">#</a> 2.4.2 更新参数</h5> <p>页面上也可以更新参数，类似更新页面状态。<code>navigation.setParams</code>就可以用来更新页面参数</p> <p>你也可以向页面传递一些初始参数。如果导航到页面并没有设置任何参数，这个初始参数将会被使用。它们会与传递的参数进行浅合并。初始参数被指定为initialParams 属性:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Screen
+  name<span class="token operator">=</span><span class="token string">&quot;Login&quot;</span>
+  component<span class="token operator">=</span><span class="token punctuation">{</span>Login<span class="token punctuation">}</span>
+  initialParams<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> userId<span class="token operator">:</span> <span class="token number">42</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div><h5 id="_2-4-3-传递参数到之前的页面"><a href="#_2-4-3-传递参数到之前的页面" class="header-anchor">#</a> 2.4.3 传递参数到之前的页面</h5> <p>不仅仅能传递参数到新的页面，也能传递参数到之前的页面。</p> <p>想做到这个，你可以使用<code>navigate</code>的方法，如果页面存在的话，可以使用像 <code>goBack</code> 这样的方法。你可以通过<code>navigate</code>携带参数将参数传回去：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Some.js</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useState<span class="token punctuation">,</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Text<span class="token punctuation">,</span> View <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react-native&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>View<span class="token operator">&gt;</span>
+       <span class="token operator">&lt;</span>Text<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>route<span class="token punctuation">.</span>params<span class="token punctuation">.</span>type <span class="token operator">?</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>route<span class="token punctuation">.</span>params<span class="token punctuation">.</span>type <span class="token operator">:</span> <span class="token string">&quot;has null&quot;</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Home.js</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> View<span class="token punctuation">,</span> TextInput<span class="token punctuation">,</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">goLogin</span><span class="token punctuation">(</span><span class="token parameter">navigation<span class="token punctuation">,</span> postText</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  navigation<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">&quot;Login&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>type<span class="token operator">:</span> postText<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// 把输入框的值传递给 Login 页面</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">Some</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>navigation<span class="token punctuation">,</span> route<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> <span class="token punctuation">{</span>text<span class="token punctuation">}</span> <span class="token operator">=</span> route<span class="token punctuation">.</span>params<span class="token punctuation">;</span>
+  <span class="token keyword">let</span> <span class="token punctuation">[</span>postText<span class="token punctuation">,</span> setPostText<span class="token punctuation">]</span> <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">useState</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>View<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>TextInput
+        multiline
+        placeholder<span class="token operator">=</span><span class="token string">&quot;What's on your mind?&quot;</span>
+        style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> height<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span> padding<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span> backgroundColor<span class="token operator">:</span> <span class="token string">'gray'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+        value<span class="token operator">=</span><span class="token punctuation">{</span>postText<span class="token punctuation">}</span>
+        onChangeText<span class="token operator">=</span><span class="token punctuation">{</span>setPostText<span class="token punctuation">}</span>
+      <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Button
+        title<span class="token operator">=</span><span class="token string">&quot;Go to Login&quot;</span>
+        onPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">goLogin</span><span class="token punctuation">(</span>navigation<span class="token punctuation">,</span> postText<span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> Some<span class="token punctuation">;</span>
+</code></pre></div><h4 id="_2-5-配置header-bar"><a href="#_2-5-配置header-bar" class="header-anchor">#</a> 2.5 配置header bar</h4> <p>自定义 <code>header</code> 样式有3个关键属性：<code>headerStyle</code>, <code>headerTintColor</code> ,和 <code>headerTitleStyle</code>。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>NavigationContainer<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Navigator<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Screen
+            name<span class="token operator">=</span><span class="token string">&quot;Home&quot;</span>
+            component<span class="token operator">=</span><span class="token punctuation">{</span>Home<span class="token punctuation">}</span>
+            options<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+              title<span class="token operator">:</span> <span class="token string">'My home'</span><span class="token punctuation">,</span>
+              headerStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+                backgroundColor<span class="token operator">:</span> <span class="token string">'#f4511e'</span><span class="token punctuation">,</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              headerTintColor<span class="token operator">:</span> <span class="token string">'#fff'</span><span class="token punctuation">,</span>
+              headerTitleStyle<span class="token operator">:</span> <span class="token punctuation">{</span>
+                fontWeight<span class="token operator">:</span> <span class="token string">'bold'</span><span class="token punctuation">,</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Stack<span class="token punctuation">.</span>Navigator<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>NavigationContainer<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_2-6-header-button"><a href="#_2-6-header-button" class="header-anchor">#</a> 2.6 Header  Button</h4> <p>给 header 右侧添加一个操作按钮--常见功能</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>NavigationContainer<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Navigator initialRouteName<span class="token operator">=</span><span class="token string">&quot;Login&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Screen options<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>headerShown<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">}</span>  name<span class="token operator">=</span><span class="token string">&quot;Login&quot;</span>  component<span class="token operator">=</span><span class="token punctuation">{</span>Login<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Stack<span class="token punctuation">.</span>Screen name<span class="token operator">=</span><span class="token string">&quot;Some&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>Some<span class="token punctuation">}</span> 
+          options<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+            <span class="token function-variable function">headerRight</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+              <span class="token operator">&lt;</span>Button
+                onPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'This is a button!'</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+                title<span class="token operator">=</span><span class="token string">&quot;add&quot;</span>
+                color<span class="token operator">=</span><span class="token string">&quot;#999&quot;</span>
+              <span class="token operator">/</span><span class="token operator">&gt;</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">}</span>
+        <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>Stack<span class="token punctuation">.</span>Navigator<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>NavigationContainer<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-嵌套导航（tabs）"><a href="#_3-嵌套导航（tabs）" class="header-anchor">#</a> 3. 嵌套导航（Tabs）</h3> <h4 id="_3-1-安装依赖"><a href="#_3-1-安装依赖" class="header-anchor">#</a> 3.1 安装依赖</h4> <div class="language-js extra-class"><pre class="language-js"><code>npm install @react<span class="token operator">-</span>navigation<span class="token operator">/</span>bottom<span class="token operator">-</span>tabs
+</code></pre></div><h5 id="_3-2-example"><a href="#_3-2-example" class="header-anchor">#</a> 3.2 Example</h5> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Some.js // 将之前的 Some.js 替换为以下代码</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>createBottomTabNavigator<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@react-navigation/bottom-tabs'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> View<span class="token punctuation">,</span> Button<span class="token punctuation">,</span> Text <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-native'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Tab <span class="token operator">=</span> <span class="token function">createBottomTabNavigator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// </span>
+
+<span class="token keyword">function</span> <span class="token function">HomePage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>View
+      style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        backgroundColor<span class="token operator">:</span> <span class="token string">'#ccc'</span><span class="token punctuation">,</span>
+        justifyContent<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+        alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Text<span class="token operator">&gt;</span>HomePage<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Button
+        title<span class="token operator">=</span><span class="token string">&quot;Go to Profile&quot;</span>
+        onPress<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> navigation<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'Login'</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+      <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">Geo</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>navigation<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>View
+      style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        backgroundColor<span class="token operator">:</span> <span class="token string">'#ddd'</span><span class="token punctuation">,</span>
+        justifyContent<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+        alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Text<span class="token operator">&gt;</span>Geo<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">Mine</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>navigation<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>View
+      style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        flex<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        backgroundColor<span class="token operator">:</span> <span class="token string">'#ddd'</span><span class="token punctuation">,</span>
+        justifyContent<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+        alignItems<span class="token operator">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Text<span class="token operator">&gt;</span>Mine<span class="token operator">&lt;</span><span class="token operator">/</span>Text<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>View<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">Some</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>navigation<span class="token punctuation">,</span> route<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>Tab<span class="token punctuation">.</span>Navigator<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Tab<span class="token punctuation">.</span>Screen name<span class="token operator">=</span><span class="token string">&quot;HomePage&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>HomePage<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Tab<span class="token punctuation">.</span>Screen name<span class="token operator">=</span><span class="token string">&quot;Geo&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>Geo<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Tab<span class="token punctuation">.</span>Screen name<span class="token operator">=</span><span class="token string">&quot;Mine&quot;</span> component<span class="token operator">=</span><span class="token punctuation">{</span>Mine<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>Tab<span class="token punctuation">.</span>Navigator<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> Some<span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/27/2021, 9:31:28 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/SideBar/ReactNative/Android打包APK.html" class="prev">
+        React Native Android 打包APK
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a455e305.js" defer></script><script src="/assets/js/2.cdcfc504.js" defer></script><script src="/assets/js/11.5d74ab4f.js" defer></script>
+  </body>
+</html>
