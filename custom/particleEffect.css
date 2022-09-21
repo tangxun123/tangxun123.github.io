@@ -1,0 +1,22 @@
+html, body, #app {
+    height: 100%;
+}
+#app {
+    /* background: linear-gradient(to top, palevioletred 0%, #fff 100%); */
+    background: no-repeat linear-gradient(to bottom, #011a39 0%, #009d7f 100%);
+}
+.home {
+    padding: 3rem 2rem 0;
+}
+#main-title, .description, .features, .feature h2, .feature p, .footer{
+    color: #ddd !important;
+}
+#canvas {
+    position: absolute;
+    height: calc(100% - 60px);
+    margin-top: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
